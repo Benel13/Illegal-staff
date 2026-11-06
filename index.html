@@ -2,105 +2,27 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Questionnaire - Entretien Groupes Illégaux</title>
   <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6;
-      background: #0f0f17;
-      color: #f1f1f1;
-      padding: 40px;
-    }
-
-    h1, h2, h3 {
-      margin-bottom: 15px;
-      font-weight: 600;
-    }
-
-    h1 {
-      font-size: 2rem;
-      color: #a855f7; /* Violet accent */
-      border-bottom: 2px solid #a855f7;
-      padding-bottom: 10px;
-      margin-bottom: 25px;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      color: #d1c4ff;
-      margin-top: 30px;
-      border-left: 4px solid #a855f7;
-      padding-left: 10px;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-      margin-top: 20px;
-      color: #e5d9ff;
-    }
-
-    p, li {
-      margin-bottom: 8px;
-      color: #ddd;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin-bottom: 15px;
-    }
-
-    .section {
-      background: #1c1c28;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 25px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-    }
-
-    .important {
-      background: #2a2139;
-      border-left: 5px solid #a855f7;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      font-style: italic;
-    }
-
-    .question {
-      margin-bottom: 15px;
-    }
-
-    .question strong {
-      color: #a855f7;
-    }
-
-    .answer {
-      background: #2b2b3d;
-      padding: 10px;
-      border-radius: 8px;
-      margin-top: 5px;
-      font-size: 0.95rem;
-    }
-
-    .list-style {
-      list-style-type: "➡️ ";
-    }
-
-    .footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 2px solid #a855f7;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Segoe UI", Roboto, sans-serif; line-height: 1.6; background: #0f0f17; color: #f1f1f1; padding: 40px; }
+    h1, h2, h3 { margin-bottom: 15px; font-weight: 600; }
+    h1 { font-size: 2rem; color: #a855f7; border-bottom: 2px solid #a855f7; padding-bottom: 10px; margin-bottom: 25px; }
+    h2 { font-size: 1.5rem; color: #d1c4ff; margin-top: 30px; border-left: 4px solid #a855f7; padding-left: 10px; }
+    h3 { font-size: 1.2rem; margin-top: 20px; color: #e5d9ff; }
+    p, li { margin-bottom: 8px; color: #ddd; }
+    ul { padding-left: 20px; margin-bottom: 15px; }
+    .section { background: #1c1c28; padding: 20px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 8px rgba(0,0,0,0.4); }
+    .important { background: #2a2139; border-left: 5px solid #a855f7; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-style: italic; }
+    .question { margin-bottom: 15px; margin-top: 25px; }
+    .question strong { color: #a855f7; }
+    .answer { background: #2b2b3d; padding: 10px; border-radius: 8px; margin-top: 5px; font-size: 0.95rem; }
+    .answer ul { margin-bottom: 0; }
+    .answer li { margin-bottom: 4px; }
+    .note { margin-top: 8px; font-size: 0.85rem; color: #c9b8ff; font-style: italic; }
+    .list-style { list-style-type: "➡️ "; }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #a855f7; text-align: center; font-size: 0.9rem; color: #aaa; }
   </style>
 </head>
 <body>
@@ -113,127 +35,223 @@
   <div class="section">
     <h2>Partie 1 : Notions Roleplay</h2>
     <ul class="list-style">
-      <li>Freekill ➡️ Demandez des exemples</li>
-      <li>Metagaming ➡️ Demandez des exemples</li>
-      <li>Force RP ➡️ Demandez des exemples</li>
-      <li>Free-Punch ➡️ Demandez des exemples</li>
-      <li>Raccourci RP ➡️ Demandez des exemples</li>
-      <li>Bunny Hop ➡️ Demandez des exemples</li>
-      <li>Powergaming ➡️ Demandez des exemples</li>
-      <li>CopBait  ➡️ Demandez des exemples</li>
-      <li>Mass RP ➡️ Demandez des exemples</li>
+      <li>Freekill ➡️ Demandez des exemples. <em>Tuer quelqu’un sans motif légitime.</em></li>
+      <li>Metagaming ➡️ Demandez des exemples. <em>Utiliser en RP des informations obtenues en HRP (stream, Discord…).</em></li>
+      <li>Force RP ➡️ Demandez des exemples. <em>Forcer quelqu’un à jouer un rôle sans lui laisser le choix d’accepter la scène.</em></li>
+      <li>Free-Punch ➡️ Demandez des exemples. <em>Frapper quelqu’un sans motif légitime.</em></li>
+      <li>Raccourci RP ➡️ Demandez des exemples. <em>Conclusion hâtive sur un joueur ou un groupe (ex. : véhicule jaune = Vagos).</em></li>
+      <li>Bunny Hop ➡️ Demandez des exemples. <em>Se déplacer en sautillant de façon répétée pour gagner en vitesse.</em></li>
+      <li>Powergaming ➡️ Demandez des exemples. <em>Faire quelque chose d’irréalisable dans la vraie vie.</em></li>
+      <li>CopBait ➡️ Demandez des exemples. <em>Provoquer ou harceler les forces de l’ordre (insultes, klaxons…) pour lancer une poursuite.</em></li>
+      <li>Mass RP ➡️ Demandez des exemples. <em>Considérer que certains lieux (commissariats, hôpitaux, parkings publics, entreprises) sont toujours peuplés, même vides. Voler un véhicule dans ces lieux est interdit.</em></li>
+      <li>Chicken-Run / Strafe ➡️ Demandez des exemples. <em>Se déplacer dans tous les sens pour esquiver les tirs.</em></li>
+      <li>Retour Zone ➡️ Demandez des exemples. <em>Retourner sur une zone ou une scène après avoir été mis dans le coma.</em></li>
     </ul>
   </div>
 
   <div class="section">
 <h2>Partie 2 : Questions sur le règlement</h2>
 
-<div class="question"><strong>Question 1 :</strong> Combien de joueurs peuvent être présents sur une même scène illégale ?<br>
-<em>(Demandez-lui de préciser quelles catégories de groupes sont concernées et combien de joueurs peuvent monter sur scène dans chaque cas.)</em></div>
+<div class="question"><strong>Question 1 :</strong> Combien de joueurs peuvent être présents sur une même scène illégale, et combien dans un groupe ?<br>
+<em>(Demandez-lui de préciser quelles catégories de groupes sont concernées.)</em></div>
 <div class="answer">
-Réponse : Selon le type de groupe :<br>
-- Sans groupe : 3 joueurs maximum.<br>
-- Groupe indépendant : 6 joueurs maximum.<br>
-- Groupe officiel : 20 joueurs maximum.
+Réponse : Par scène :
+<ul>
+<li>Sans groupe : 3 joueurs maximum.</li>
+<li>Groupe indépendant : 6 joueurs maximum.</li>
+<li>Groupe officiel : 20 joueurs maximum.</li>
+</ul>
+Par groupe : 13 joueurs maximum pour un indépendant, 30 pour un officiel.
 </div>
 
 <div class="question"><strong>Question 2 :</strong> Combien d’entreprises légales peuvent être détenues par un seul et même groupe illégal ?</div>
 <div class="answer">
-Réponse : Un seul business légal par groupe illégal.
+Réponse : Une seule entreprise par groupe illégal.
 </div>
 
 <div class="question"><strong>Question 3 :</strong> Combien de temps faut-il patienter avant de retourner vous mettre en sécurité dans votre zone de MASS RP ?<br>
 <em>(Quartier, Villa, Bunker…)</em></div>
 <div class="answer">
-Réponse : Il faut attendre un délai minimum de 10 minutes avant de retourner dans votre zone sécurisée.
+Réponse : Un délai minimum de 10 minutes après le début de l’interaction RP. Il est interdit de se réfugier directement dans un quartier, un QG ou une zone de Mass RP avant la fin de la scène.
 </div>
 
 <div class="question"><strong>Question 4 :</strong> Sous quelles conditions une alliance entre groupes est possible ?</div>
 <div class="answer">
-Réponse : Les alliances sont interdites. Seules les transactions commerciales ou des contrats ponctuels sont autorisés, mais les deux groupes ne doivent jamais agir ensemble.
+Réponse : Les alliances sont interdites (sanction : bannissement + avertissement de groupe). Exceptions :
+<ul>
+<li>Transactions commerciales (vente de drogues ou d’armes).</li>
+<li>Récolte et traitement de drogue pour des groupes qui travaillent sur le même laboratoire.</li>
+<li>Contrats ponctuels : un groupe est payé pour une mission, mais seul un des deux groupes agit.</li>
+</ul>
+Interdits : alliances sur les convois vers la Prison Fédérale (sauf accord du Staff) et farm de drogue en coopération.
 </div>
 
-<div class="question"><strong>Question 5 :</strong> Une descente dans un lieu “sensible” est-elle possible ? Si oui, sous quelles conditions ? Si non, pourquoi ?<br>
-<em>(Descente à la batte possible, sans dossiers pour les GANGS DE RUE)</em></div>
+<div class="question"><strong>Question 5 :</strong> Une descente ou une attaque dans un lieu “sensible” est-elle possible ? Si oui, sous quelles conditions ?</div>
 <div class="answer">
-Réponse : Oui, mais uniquement après validation par ticket auprès du Staff. Les assauts sur commissariats, hôpitaux, lieux publics ou quartiers chauds nécessitent un dossier détaillé. Les gangs de rue ne peuvent pas effectuer de descente sans cette validation.
+Réponse : Oui, mais uniquement avec validation du Staff via un ticket.
+<ul>
+<li>Assauts sur commissariats, hôpitaux, lieux publics fréquentés ou quartiers chauds : validation par ticket obligatoire.</li>
+<li>Descente dans le QG d’un gang ou d’une organisation : dossier validé par ticket, avec une justification claire et cohérente.</li>
+</ul>
+Aucune exception pour les gangs de rue.
 </div>
 
 <div class="question"><strong>Question 6 :</strong> Quel est le “temps réglementaire” pour réitérer des actes illégaux suite à une blessure par balles ?</div>
 <div class="answer">
-Réponse : Après une fusillade perdue, il faut attendre un délai de 12 heures avant de relancer une fusillade contre le même groupe.
+Réponse : Passage obligatoire par l’hôpital, puis 20 minutes minimum sans échange de tirs ni activité illégale. Toute infraction entraîne de lourdes sanctions.<br>
+<div class="note">À ne pas confondre avec le délai de représailles : après une fusillade perdue contre un groupe, il faut attendre 12h avant d’en relancer une contre ce même groupe.</div>
 </div>
 
 <div class="question"><strong>Question 7 :</strong> Citer la liste des armes utilisables dans l’illégal du serveur, et qui peut se servir de quelles armes.</div>
 <div class="answer">
-Réponse :<br>
-- Pistolet SNS, Pistolet, Pistolet Vintage, Pistolet MK2, Revolver Double Action, Pistolet WM29, Pistolet Lourd, Pistolet S20, Pistolet perforant, PM Compact : Autorisé pour tous les illégaux.<br>
-- SMG Tactique, Mini SMG, Micro SMG, Pistolet Cal.50 : Autorisé pour tous.<br>
-- Fusil compact, Fusil AKS, Fusil canon Scié, Fusil double canon : Autorisé uniquement pour Lead et Co-Lead.<br>
-- Fusils d’assaut, Gusenberg, Fusil AR-74, Fusil à pompe R12, Fusil tactique : Autorisé uniquement pour organisations officielles.
+Réponse :
+<ul>
+<li><strong>Indépendants (et tous les groupes) :</strong> Pistolet SNS, Pistolet, Pistolet Vintage, Pistolet MK2, Revolver Double Action, Pistolet WM29, Pistolet Lourd, Pistolet S20, Pistolet perforant, PM Compact, Fusil double canon.</li>
+<li><strong>Gangs (officiels) :</strong> toutes les armes indépendantes + SMG Tactique, Mini SMG, Micro SMG, Pistolet Cal.50. Lead et co-lead uniquement : Fusil compact, Fusil AKS, Fusil canon scié.</li>
+<li><strong>Organisations (officielles) :</strong> toutes les armes indépendantes et gangs + Gusenberg, Fusil d’assaut, Fusil AR-74, Fusil à pompe R12, Fusil tactique, Fusil Cayo Perico.</li>
+</ul>
+Utiliser une arme hors de sa catégorie = bannissement permanent. Les armes réservées aux gangs et organisations restent interdites sur scène pour les autres, mais leur possession est autorisée (collection, achat/revente).
 </div>
 
 <div class="question"><strong>Question 8 :</strong> Expliquer le comportement d’un groupe officiel vis-à-vis du groupe GM.</div>
 <div class="answer">
-Réponse : FEAR RP obligatoire.
+Réponse : Le groupe GM est intouchable en RP : FEAR RP obligatoire. Il est neutre (aucun favoritisme) et c’est le seul fournisseur d’armes de la ville.
 </div>
 
 <div class="question"><strong>Question 9 :</strong> Expliquer la règle des trois sommations, et dans quel cas peut-on tirer sans sommations.</div>
 <div class="answer">
-Réponse : Toute utilisation d’une arme doit être précédée de 3 sommations verbales espacées d’au moins 10 secondes. On peut tirer sans sommations uniquement en cas de No Fear (ex. : joueur braqué qui fuit ou attaque immédiatement).
+Réponse : Le tir à vue est interdit. Toute utilisation d’une arme doit être précédée de 3 sommations orales claires, espacées d’au moins 10 secondes. On peut tirer sans sommations uniquement en cas de No Fear (ex. : joueur braqué qui monte dans un véhicule pour fuir). En cas d’erreur, c’est le tireur qui est sanctionné.
 </div>
 
 <div class="question"><strong>Question 10 :</strong> Quels sont les comportements inadaptés dans un contexte de fusillade ?</div>
 <div class="answer">
-Réponse : Drive-by, Straf, Redrop, emotes, langage GF, backeuses.<br>
-<strong>Prises de positions :</strong> autorisées uniquement si elles sont stratégiques et réalistes.<br>
-✅ Exemples : encercler une zone, placer des guetteurs sur un toit, se cacher derrière un élément du décor.<br>
-❌ Interdits : monter une montagne en véhicule (Offroad), monter à l’échelle braqué (NoFear), tourner le dos à un agresseur, foncer à découvert sans logique de survie.
+Réponse :
+<ul>
+<li>Drive-by (interdit sauf dossier validé), strafing abusif / Chicken-Run, Retour Zone, tirs sans sommation.</li>
+<li>Props et emotes utilisés pour un avantage tactique (bloquer la route avec des blocs de béton, se cacher dans une poubelle…).</li>
+<li>Langage GF / HRP : “backeuse”, “lève lève”, “1 mort 2 morts”, “dépop”, “ez”, “je les ai lavés”… À remplacer par “au sol”, “on l’a neutralisé”, “il a été blessé”.</li>
+<li>Prises de position sans contexte RP, stratégies purement tactiques sans construction narrative.</li>
+<li>Tenues HRP : gants bleus, bandages permanents, plâtres.</li>
+<li>Antidouleurs pendant la scène, Unité X utilisée pour fuir.</li>
+<li>Off-Road : monter une montagne en véhicule.</li>
+<li>No Fear : monter à l’échelle braqué, tourner le dos à un agresseur, foncer à découvert sans logique de survie.</li>
+</ul>
+✅ À privilégier : embuscade préparée avec dialogue RP, montée en tension (menaces, négociation, rançon), déclaration de guerre scénarisée.
 </div>
 
 <div class="question"><strong>Question 11 :</strong> Expliquer ce que vous risquez lorsque vous braquez les services publics, et quelles sont les raisons valables de braquer un agent de police.</div>
 <div class="answer">
-Réponse : Braquer un agent LSPD/BCSO sans raison RP solide peut entraîner : Mort RP si l’agent est tué, prison fédérale à vie si arrêté, descente sur QG si l’identité est révélée. Seules raisons valables : braquage avec justification RP ou dans le cadre d’une enquête pour services officiels.
+Réponse : La prise d’otage d’un agent LSPD/BCSO n’est autorisée qu’en dernier recours, sans validation préalable mais avec des risques : Mort RP en cas de décès pendant la scène, prison fédérale à vie si arrêté, descente sur le QG/quartier si l’identité est révélée.
 </div>
 
 <div class="question"><strong>Question 12 :</strong> Qu’est-il autorisé de loot sur un agent de police/Gruppe6 en service ?</div>
 <div class="answer">
-Réponse : Strictement interdit. Aucun loot n’est autorisé sur un agent en service.
+Réponse : Strictement interdit. Aucun loot n’est autorisé sur un agent LSPD, BCSO ou Gruppe6 en service.
 </div>
 
 <div class="question"><strong>Question 13 :</strong> Expliquer les prérequis et le nombre max/jour pour les braquages :</div>
 <div class="answer">
-Supérette : 2/jour, 2 otages max, 1-3 braqueurs, 1 véhicule max (10 MIN d’attente ou LSPD/BCSO sur place)<br><br>
-Fleeca : 1/jour, 2-4 otages, 4-8 braqueurs, 2 véhicules max (10 MIN d’attente ou LSPD/BCSO sur place)<br><br>
-Gruppe6 : 1/jour, Otages = Gruppe6 (15 MIN d’attente ou LSPD/BCSO sur place)<br><br>
-Bijouterie : 1/jour, 3-6 otages, 6-10 braqueurs, 4 véhicules max (20 MIN d’attente ou LSPD/BCSO sur place)
+<ul>
+<li><strong>Supérette :</strong> 2/jour, le caissier (APU) fait office d’otage, 1-3 braqueurs, 1 véhicule max, attente de 10 min ou arrivée LSPD/BCSO.</li>
+<li><strong>ATM :</strong> 3/jour, 1-2 braqueurs, 1 véhicule max, attente de 5 min à chaque ATM ou arrivée LSPD/BCSO.</li>
+<li><strong>Conteneur :</strong> 10/jour, 1-2 braqueurs, 1 véhicule max, attente de 5 min ou arrivée LSPD/BCSO.</li>
+<li><strong>Cambriolage habitation :</strong> 2/jour par joueur, 1-3 cambrioleurs, 1 véhicule max, attente de 10 min ou arrivée LSPD/BCSO, cooldown de 72h par habitation, armes légères uniquement.</li>
+<li><strong>Fleeca :</strong> 1/jour, 2-3 otages (le banquier compte), 4-8 braqueurs (6 max pour les indépendants), 2 véhicules max, attente de 10 min ou arrivée LSPD/BCSO.</li>
+<li><strong>Gruppe6 :</strong> 1/jour, attente de 15 min ou arrivée LSPD/BCSO pour négocier.</li>
+<li><strong>Bijouterie :</strong> 1/jour, 3-5 otages, 6-10 braqueurs (6 max pour les indépendants), 4 véhicules max, attente de 20 min ou arrivée LSPD/BCSO. Interdit d’arriver plus de 5 min avant le lancement.</li>
+<li><strong>Pacific Bank / Yacht / Entreprise / Humane Labs / Station pétrolière :</strong> sur dossier, 6-10 otages, 12-20 braqueurs, 6 véhicules max, attente de l’arrivée LSPD/BCSO. Réservé aux officiels (entreprise : indépendants autorisés pour les petites).</li>
+</ul>
+Pour tous : seuls les véhicules classés “autorisés illégal” sont permis. Braquage minute et contre-braquage interdits.
 </div>
 
 <div class="question"><strong>Question 14 :</strong> Dans quelles conditions pouvez-vous loot quelqu’un ?</div>
 <div class="answer">
-Réponse : Seulement dans un contexte RP logique. Loot abusif ou systématique interdit. Les ordres humiliants ou dégradants sont exclus (HRP obligatoire en cas de torture). Loot autorisé uniquement sur actions illégales ou points chauds, et limité à 50 % des possessions pour les civils.
+Réponse :
+<ul>
+<li>Uniquement un joueur qui réalise une action illégale (arme en main, point chaud, territoire ennemi). Les civils ne peuvent pas être dépouillés.</li>
+<li>Maximum 50 % de ses possessions s’il coopère (valable aussi pour les véhicules).</li>
+<li>Interdit de loot directement sur un point chaud : il faut déplacer le joueur pour une vraie scène RP (interrogatoire, mise en garde, racket).</li>
+<li>Exception : un groupe officiel détenteur d’un business (armes ou drogues) peut récupérer 100 % de ce qui est lié à son activité.</li>
+<li>Ordres dégradants interdits. Torture interdite sans autorisation HRP préalable d’un Staff et de la personne concernée.</li>
+</ul>
 </div>
 
 <div class="question"><strong>Question 15 :</strong> Expliquez ce que vous pouvez faire avec le téléphone de quelqu’un lorsque vous le braquez.</div>
 <div class="answer">
-Réponse : Vous pouvez fouiller le téléphone pendant un temps limité (max 10 minutes) uniquement pour obtenir des preuves RP liées à l’action illégale. Les services officiels peuvent lire le Darkweb dans le cadre d’enquêtes. Le téléphone doit être restitué à la fin de l’interaction. Obligation de fournir le code PIN si demandé par la police ou braquage RP.
+Réponse :
+<ul>
+<li>Vol autorisé uniquement avec une raison RP valide : enquête des services officiels, ou joueur impliqué dans une action illégale au moment de l’interaction.</li>
+<li>Fouille de 10 minutes maximum.</li>
+<li>Seuls les agents DOA/CIU peuvent lire le Darkweb.</li>
+<li>Utilisation abusive interdite (ex. : envoyer un message à tous ses contacts).</li>
+<li>Le code PIN doit être donné, sinon No Fear RP.</li>
+<li>Téléphone restitué à la fin de l’interaction.</li>
+</ul>
 </div>
 
 <div class="question"><strong>Question 16 :</strong> Expliquer la notion de “revenge item”.</div>
 <div class="answer">
-Réponse : Un groupe m’a volé une arme lourde ou une grosse somme d’argent hier (minimum 1M en SALE). Je fais une demande auprès des managers illégaux pour qu’ils valident ou non la récupération de l’item en question le lendemain en échange d’un otage. Limité à x1 item/otage.
+Réponse : Si un groupe officiel a des preuves que l’otage appartient à un groupe qui lui a volé (armes, drogue, argent sale), il peut exiger la restitution de ses biens sous 24h contre la vie de l’otage. En cas de refus, l’otage est soumis à une Mort RP. Cette action doit être validée par le Staff via un ticket, avec des preuves solides prises avec le téléphone en jeu.
 </div>
 
 <div class="question"><strong>Question 17 :</strong> Les convois de groupe sont-ils autorisés ?</div>
 <div class="answer">
-Réponse : Oui, seulement s’ils ont une finalité RP cohérente (rendez-vous, laboratoire, déplacement de gang).<br>
-❌ Interdits : convois dans le seul but de provoquer une fusillade ou de parcourir les points chauds.<br>
-⚠️ Si attaque en laboratoire, privilégier les embuscades intelligentes (toits, ruelles, pièges) plutôt que les affrontements frontaux en convoi.
+Réponse : Oui, seulement s’ils ont une finalité RP cohérente (rendez-vous, laboratoire, déplacement de gang). Un convoi de plusieurs véhicules peut être vu comme suspect et justifier une intervention LSPD/BCSO ou d’un autre groupe.<br>
+❌ Interdits : convois dans le seul but de provoquer une fusillade ou de parcourir les points chauds, alliances sur les convois vers la Prison Fédérale (sauf accord Staff), free loot, plus d’une moto (éclaireur uniquement, jamais pour évacuer).<br>
+⚠️ Si attaque en laboratoire, privilégier les embuscades intelligentes plutôt que les affrontements frontaux en convoi.
 </div>
 
-<div class="question"><strong>Question 18 :</strong> Quelles sont les règles liées aux laboratoires d’armes et de drogues ?</div>
+<div class="question"><strong>Question 18 :</strong> Quelles sont les règles liées aux laboratoires de drogue ?</div>
 <div class="answer">
-Réponse : Les groupes doivent gérer la sécurité du laboratoire, encercler la zone, et peuvent prendre en otage les intrus. Les médecins illégaux restent intouchables. Les attaques nécessitent un dossier validé par le Staff, limité à 20 joueurs maximum, et les horaires autorisés sont de 21h00 à 01h00. Les défenses et protections post-attaque sont encadrées, et un groupe ne peut posséder qu’un seul laboratoire.
+Réponse :
+<ul>
+<li>Le gérant est responsable de la sécurité (rondes, guetteurs) : le laboratoire n’est plus une zone Mass RP. Aucun remboursement en cas de perte de clé ou d’objets.</li>
+<li>Ouverture automatique : lun-ven 21h-02h, samedi 17h-02h, dimanche 17h-00h. Tous peuvent y traiter leur drogue, hors horaires seuls les détenteurs de clé entrent.</li>
+<li>Intrus : 1re fois = pression et loot 50 % (100 % de la drogue du groupe officiel). 2e fois dans le mois = Mort RP possible, avec dossier (photos mains en l’air, date/heure, vidéos avec ID).</li>
+<li>Attaque : dossier Google Docs validé par le Staff (20 joueurs max, preuves de point, de récolte, guerre déclarée, véhicule intercepté, position, capture d’un membre). Entre 21h et 01h, contrôle de 20 minutes, supervisée par un Staff.</li>
+<li>Victoire attaquants : propriétaires avec 7 jours de protection. Victoire défenseurs : 25 % de l’inventaire des attaquants, qui ne peuvent rien attaquer pendant 7 jours.</li>
+<li>1 seul laboratoire par groupe. Les propriétaires doivent parrainer 3 groupes indépendants.</li>
+<li>Farm : véhicules “Vans” et “Commercial” uniquement. Médecins illégaux intouchables.</li>
+<li>Drogues : Cartels = Diamond Cocaïne, Organisations = Cocaïne et Meth, Gangs = MDMA et Héroïne, Indépendants = Weed.</li>
+<li>Business inactif plusieurs jours = retrait possible.</li>
+</ul>
+<div class="note">Les armes passent désormais par le business d’armes du Game Master (attaque via mission GM).</div>
+</div>
+
+<div class="question"><strong>Question 19 :</strong> Expliquer la règle du scam (arnaque) lors d’une transaction illégale.</div>
+<div class="answer">
+Réponse : Le scam est autorisé uniquement si l’un des deux groupes compte moins de 4 personnes. Un groupe de 4 ou plus ne peut pas être scamé. On ne peut loot l’objet prévu qu’après l’avoir vu. Un arnaqueur qui ne peut pas rembourser risque une Mort RP. Transactions toujours en argent sale. Interdit de scam sur un contrat de vente de véhicule.
+</div>
+
+<div class="question"><strong>Question 20 :</strong> Quelles sont les règles pour prendre un otage ?</div>
+<div class="answer">
+Réponse :
+<ul>
+<li>/otage uniquement sur une personne de dos et mains levées. Rush otage et touche bindée interdits.</li>
+<li>Interdit sur les travailleurs légaux et les nouveaux joueurs.</li>
+<li>Interdit en zone Mass RP, au spawn, en villa, quartier, entreprise ou parking.</li>
+<li>Otage à emmener hors de son territoire officiel, dans un lieu isolé.</li>
+<li>Faire vivre la scène à tous les otages, ni insulte ni coup, pas d’ordres dégradants, pas de retrait ATM ou virement forcé.</li>
+<li>Rançon : 50 000 $ max par otage pour la police, 30 000 $ pour un groupe illégal (50 000 $ pour un lead/co-lead).</li>
+<li>Libération par la force : l’otage risque la Mort RP.</li>
+</ul>
+</div>
+
+<div class="question"><strong>Question 21 :</strong> Quelles sont les règles pour les véhicules lors d’une scène illégale ?</div>
+<div class="answer">
+Réponse :
+<ul>
+<li>Drive-by interdit pendant toute poursuite, sauf dossier validé par ticket.</li>
+<li>Une seule moto par convoi (éclaireur). Motos, bateaux et aéronefs interdits pour vendre de la drogue ou braquer (sauf dossier ou groupes de bikers).</li>
+<li>Un seul hélicoptère par groupe, à haute altitude : ni atterrissage, ni dépose de joueurs, ni tir.</li>
+<li>Plan mule, récupération et PIT : après 5 min de poursuite, à moins de 100 km/h.</li>
+<li>Interdit de prendre les clés : la victime déverrouille et laisse partir le véhicule.</li>
+</ul>
+</div>
+
+<div class="question"><strong>Question 22 :</strong> Que risque-t-on en cas de No Fear RP ?</div>
+<div class="answer">
+Réponse : Le No Fear RP entraîne un wipe du personnage (ne pas coopérer face à une arme, attaquer un groupe en forte infériorité numérique…). Des sanctions supplémentaires peuvent s’y ajouter (warn, ban, prison fédérale, Mort RP). Toute Mort RP demandée par un leader doit passer par un ticket validé par le Staff.
 </div>
 </div>
 
@@ -249,47 +267,42 @@ Réponse : Les groupes doivent gérer la sécurité du laboratoire, encercler la
       <li>x1 Radio</li>
     </ul>
     <div class="answer">
-        Réponse : Selon le règlement, l’argent sale et propre n’est pas identifiable en jeu. 
-        Vous pouvez loot un maximum de 50 % des biens d’un joueur effectuant une action illégale. 
-        Donc : 
+        Réponse : L’argent sale et propre n’est pas identifiable en jeu, et le joueur effectue une action illégale : 50 % maximum.
         <ul>
             <li>Argent : maximum 500.000$ (total, peu importe sale ou propre)</li>
             <li>Armes : 1 Pistolet maximum</li>
-            <li>Radio : interdite de loot</li>
+            <li>Radio : pas de règle dédiée, à apprécier par l’intervieweur (un seul objet, donc 50 % difficile à appliquer)</li>
         </ul>
-        Tout loot doit se faire avec une justification RP.
+        La vente de drogue est un point chaud : le joueur doit d’abord être déplacé hors du point chaud pour une scène RP construite avant tout loot.
     </div>
 
     <h3>Numéro 2 ➡️ Point chaud</h3>
     <p>Je me trouve au marchand illégal, j’achète des pochons pour faire de la drogue dans un laboratoire. Des indépendants arrivent et décident de me braquer, mais je suis membre d’une organisation criminelle. Quelle réaction dois-je adopter ?</p>
     <div class="answer">
-        Réponse : Je joue mon Fear RP immédiatement. Peu importe mon statut de membre, je ne peux pas ignorer la menace. 
-        Je me conforme à des actions réalistes : lever les mains, obéir aux ordres et éviter tout risque de mort RP.
+        Réponse : Je joue mon Fear RP immédiatement : mains levées, je coopère, je ne tente rien d’héroïque. Ne pas coopérer face à une arme est du No Fear RP (wipe). De leur côté, les indépendants ne peuvent pas me loot directement sur le point chaud : ils doivent m’emmener hors du point chaud pour une vraie scène RP. Ils jouent aussi un Fear RP face à moi si mon statut officiel est clair.
     </div>
 
     <h3>Numéro 3 ➡️ Fear Otage</h3>
     <p>L’un de mes hommes est pris en otage... Quelle réaction dois-je adopter ?</p>
     <div class="answer">
-        Réponse : Je joue mon Fear RP et adopte un comportement réaliste face à la menace. 
-        Je ne tente pas de sauver l’otage par des actions irréalistes. Toute action doit être cohérente et RP.
+        Réponse : Je joue mon Fear RP et adopte un comportement réaliste face à la menace. Je ne tente pas de sauver l’otage par la force (il risquerait la Mort RP). Je négocie : argent, armes, drogues, informations ou toute autre demande RP cohérente.
     </div>
 
     <h3>Numéro 4 ➡️ Récupération d’otages</h3>
     <p>L’un de mes hommes est otage face à un groupe de 20 personnes. Suite à une embrouille, le chef adverse décide de l’exécuter.</p>
     <div class="answer">
-        Réponse : 
+        Réponse :
         <ul>
             <li>Option RP : négocier ou offrir des biens (argent, armes, drogues) pour récupérer l’otage.</li>
-            <li>Option Force : ouvrir le feu pour sauver l’otage, mais il risque une Mort RP immédiate.</li>
-            <li>Respecter les règles : aucune action irréaliste ou abusive. Tout sauvetage doit être crédible et RP.</li>
+            <li>Option Force : ouvrir le feu expose l’otage à une Mort RP, et face à 20 personnes c’est du No Fear RP (wipe).</li>
+            <li>Une Mort RP définitive ne se décide pas seule : elle exige un ticket avec preuves, validé par le Staff.</li>
         </ul>
     </div>
 
     <h3>Numéro 5 ➡️ Fusillades</h3>
     <p>Une fusillade éclate à la fabrique d’armes. En amont, un bâtiment avec une échelle pourrait me donner l’avantage.</p>
     <div class="answer">
-        Réponse : Ne pas monter sur l’échelle pour prendre un avantage tactique immédiat. 
-        Toute action doit rester RP et cohérente. La scène n’est pas un GunFight ; je privilégie la narration et la cohérence.
+        Réponse : Je ne monte pas sur l’échelle pour prendre un avantage tactique sans contexte RP. Je pars aussi du principe que la scène attire des renforts de police et que je dois quitter les lieux dès les sirènes. Il ne faut pas de GunFight : pas de strafe, pas de props, pas de langage HRP, et 3 sommations avant de tirer.
     </div>
 </div>
 
@@ -297,7 +310,7 @@ Réponse : Les groupes doivent gérer la sécurité du laboratoire, encercler la
     <h2>Expliquer nos Attentes</h2>
     <h3>Si il s’agit d’un Gang :</h3>
     <ul>
-      <li>Avoir un maximum de cohérence (low rider, vélo…)</li>
+      <li>Avoir un maximum de cohérence (low rider, vélo, anciennes voitures américaines…)</li>
       <li>Privilégier les interactions à l’arme blanche</li>
       <li>Faire vivre leur quartier avec habitants/indépendants</li>
       <li>Développer leur influence (territoires, business)</li>
@@ -307,7 +320,7 @@ Réponse : Les groupes doivent gérer la sécurité du laboratoire, encercler la
     <h3>Si il s’agit d’une Organisation, MC, Mafia, Cartel ou Famille :</h3>
     <ul>
       <li>Créer des interactions avec les gangs (contrats, missions…)</li>
-      <li>Avoir de la cohérence (éviter convois/indépendants)</li>
+      <li>Avoir de la cohérence (véhicules discrets type SUV/4x4 sobres, éviter convois/indépendants)</li>
       <li>Privilégier les scènes avec organisations/gangs</li>
       <li>Développer leur influence (territoires, business)</li>
       <li>Faire tourner les business attribués (officiels uniquement)</li>
